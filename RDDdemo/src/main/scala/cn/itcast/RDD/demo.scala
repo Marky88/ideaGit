@@ -34,7 +34,10 @@ object demo {
       .reduceByKey((temp, item) => temp + item)
 
     resultRDD.saveAsTextFile(s"/hi-${System.currentTimeMillis()}")
-    resultRDD.foreach(println)
+   // resultRDD.foreach(println)
+
+
+
     // 4. 第三步、将最终处理结果RDD保存到HDFS或打印控制台
     /*
        (spark,11)
