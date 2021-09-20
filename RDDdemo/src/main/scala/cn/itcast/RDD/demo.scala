@@ -34,7 +34,7 @@ object demo {
       .reduceByKey((temp, item) => temp + item)
 
     resultRDD.saveAsTextFile(s"/hi-${System.currentTimeMillis()}")
-   // resultRDD.foreach(println)
+    resultRDD.foreach(println)
 
 
 
