@@ -33,8 +33,8 @@ object demo {
       // d. 分组聚合
       .reduceByKey((temp, item) => temp + item)
 
-    resultRDD.saveAsTextFile(s"/hi-${System.currentTimeMillis()}")
-    resultRDD.foreach(println)
+    //resultRDD.saveAsTextFile(s"/hi-${System.currentTimeMillis()}")
+   // resultRDD.foreach(println)
 
 
 
