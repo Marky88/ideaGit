@@ -13,6 +13,8 @@ object WordCount {
 
   def main(args: Array[String]): Unit = {
 
+    println("git")
+
 
   val ssc: StreamingContext = {
     val sparkConf = new SparkConf()
